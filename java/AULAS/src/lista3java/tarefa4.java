@@ -35,8 +35,6 @@ public class tarefa4 {
 		int contador=1;
 		String nome;
 		
-		
-		
 		while ( op=='S' && contador <= LIMITE) {
 			System.out.println("Participante "+contador);
 			System.out.print("Digite a idade: ");
@@ -84,12 +82,7 @@ public class tarefa4 {
 		System.out.println("Outros calmos : "+outrosCalmos);
 		System.out.println("Pessoas nervosas mais de 40 anos :"+pessoasNervosasMais40Anos);
 		System.out.println("Menos de 18 calmos :"+pessoasCalmasMenos18Anos);
-		
-		
-		
-		
-		
-		
+
 		
 	}
 
