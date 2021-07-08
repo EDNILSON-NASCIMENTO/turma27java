@@ -2,6 +2,7 @@ package programas;
 
 import java.util.Scanner;
 
+import objetos.Conta;
 import objetos.FrontLoko;
 import objetos.Pessoa;
 
@@ -12,6 +13,8 @@ public class CadBanca {
 		Scanner leia = new Scanner(System.in);
 		Pessoa cliente1 = new Pessoa();
 		FrontLoko desenho = new FrontLoko();
+		Conta clibanca = new Conta(55,100);
+		
 		
 				
 		System.out.println("Digite seu nome: ");
@@ -24,9 +27,14 @@ public class CadBanca {
 		} else {
 			System.out.println("Proibido conteudo menor de 18 anos!!!");
 		}
-		
-		desenho.linha(50);
-		desenho.mensagem();
+		System.out.println("DADOS BANCARIOS ");
+		clibanca.imprimeExtrato();
+		System.out.println("Valor da revista :");
+		double valor = leia.nextDouble();
+		System.out.println("Processando pagamento");
+		clibanca.saca(valor);
+		System.out.println("SITUAÇÃO ATUAL DA CONTA APÓS PAGAMENTO");
+		clibanca.imprimeExtrato();
 		
 	}
 	
